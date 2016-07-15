@@ -54,10 +54,18 @@
             </dt>
         </dl>
         <table border="1">
+            <caption>Tabla de nombres de ciudades</caption>
+            <thead>
             <tr><th>No.</th><th>Nombre</th><th>Descripción</th></tr>
+            </thead>
+            <tbody>
             <tr><td>1</td><td>Pasto</td><td>Ciudad Sorpresa</td></tr>
             <tr><td>2</td><td>Cali</td><td>Sucursal del cielo</td></tr>
-            <tr><td>2</td><td>Bogotá</td><td>Ciudad de la Cultura</td></tr>
+            <tr><td>3</td><td>Bogotá</td><td>Ciudad de la Cultura</td></tr>                
+            </tbody>
+            <tfoot>
+            <tr><td>Total 3</td><td>Ciudades</td><td>Descripciones</td></tr>    
+            </tfoot>
         </table>
         <br>
         <table border="1">
@@ -83,5 +91,28 @@
                 <td colspan="3">Celda 13</td>
             </tr>
         </table>
+        <img src="images/manga.jpg" alt="Logo ParqueSoft Pasto">
+        <video width="640" height="" controls  muted>
+            <source src="videos/animacion.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="audios/jingle.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <form action="" id="registro">
+            <input type="number" name= "numero" min="0" max="11" required><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name= "nombre" value="" id="nombre" maxlength="45"><br>
+            <input type="tel" name= "telefono" value="" required><br>
+            <input type="url" name= "direccionweb" value=""><br>
+            <input type="password" name="contraseña" value="" placeholder="Contraseña"><br>
+            <input type="email" name="email" value=""><br>
+            <input type="date" name="fechaingreso" value=""><br>
+            <input type="time" name="horaingreso" value=""><br>
+            <input type="checkbox" name="" value=""><br>
+            <input type="radio" name="" value="">
+            <input type="submit" name="envio" value="Enviar">
+            <input type="reset" name="" value="limpiar">
+        </form>
     </body>
 </html>
