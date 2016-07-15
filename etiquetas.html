@@ -100,17 +100,52 @@
         </audio>
         <br>
         <form action="" id="registro">
+            <label for="nombre">Cédula:</label>
             <input type="number" name= "numero" min="0" max="11" required><br>
             <label for="nombre">Nombre:</label>
             <input type="text" name= "nombre" value="" id="nombre" maxlength="45"><br>
+            <label for="nombre">Telefono:</label>
             <input type="tel" name= "telefono" value="" required><br>
+            <label for="nombre">Dirección Web:</label>
             <input type="url" name= "direccionweb" value=""><br>
-            <input type="password" name="contraseña" value="" placeholder="Contraseña"><br>
-            <input type="email" name="email" value=""><br>
+            <label for="nombre">Contraseña:</label>
+            <input type="password" name="contraseña" value="" placeholder="Contraseña" 
+                pattern="(?=.*\d)(?=.*[A,Z])(?=.*[a,z]).{8,}" 
+                title="La contraseña debe tener al menos un número, una letra minuscula, una letra mayuscula y de 8 caracteres" 
+                required><br>
+            <label for="nombre">Correo Electrónico:</label>
+            <input type="email" name="email" value="" placeholder="Correo Electronico"><br>
+            <label for="nombre">Fecha Ingreso:</label>
             <input type="date" name="fechaingreso" value=""><br>
+            <label for="nombre">Hora Ingreso:</label>
             <input type="time" name="horaingreso" value=""><br>
+            <label for="nombre">Le gustan los perros:</label>
             <input type="checkbox" name="" value=""><br>
-            <input type="radio" name="" value="">
+            <label for="nombre">Genero:</label>
+            <input type="radio" name="genero" value="m">Masculino
+            <input type="radio" name="genero" value="f">Femenino<br>
+            <label for="nombre">Biografia:</label>
+            <textarea rows="3" cols="60"></textarea><br>
+            <label for="nombre">Comida preferida:</label>
+            <select name="comida">
+                <optgroup label="Tradicional">
+                <option value="1">chara</option>    
+                <option value="2">cuy</option>    
+                <option value="3">mote</option>    
+                </optgroup>
+                <optgroup label="Internacional">
+                <option value="4">Lasagna</option>                    
+                <option value="4">Pizza</option>                    
+                </optgroup>
+            </select><br>
+            <label for="nombre">Genero:</label>
+            <datalist id="diccionario">
+                <option value="Dario"></option>
+                <option value="Pedro"></option>
+                <option value="Luis"></option>
+                
+            </datalist>
+            <input type="" name="" value="" list="diccionario">
             <input type="submit" name="envio" value="Enviar">
             <input type="reset" name="" value="limpiar">
         </form>
